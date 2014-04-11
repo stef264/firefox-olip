@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<!DOCTYPE window SYSTEM "chrome://olip/locale/olipSettings.dtd">
+
+<prefwindow id="olip-options-dialog" title="&pref.OlipTitle;" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://olip/content/olipSettings.js" />
+    <prefpane id="olip-settings" flex="1" label="&pref.gen.TabTitle;" image="chrome://olip/skin/icons/link-icon-32.png">
+		<preferences>
+			<preference id="olip-isenabled" name="extensions.olip.isenabled" type="bool" />
+			<preference id="olip-usefilters" name="extensions.olip.usefilters" type="bool" />
+			<preference id="olip-extapplocation" name="extensions.olip.location" type="string" />			
+		</preferences>
+		
+		<groupbox id="general-settings">
+			<caption label="&pref.gen.TabTitle;" />
+			<checkbox id="olipIsEnabled"
+								label="&pref.gen.EnablePlugin;"
+								preference="olip-isenabled" />
+			<checkbox id="olipUseFilters"
+								label="&pref.gen.UseURLFilters;"
+								disabled="true"
+								preference="olip-usefilters" />
+			<hbox align="center">
+			    <label id="olipExtAppLabel" value="&pref.gen.ExternalApp;"/>
+				<textbox id="olipExtAppLocation" label="&pref.gen.ExternalAppLocation;" preference="olip-extapplocation" readonly="true" width="250" />
+				<button id="browsebtn" label="&pref.gen.BrowseLabel;" oncommand="OlipOne.BrowseAppPath();"/>
+			</hbox>
+		</groupbox>
+	</prefpane>
+	
+	<prefpane id="olip-putty-pref" label="&pref.app.TabTitle;" image="chrome://olip/skin/icons/terminal-icon-32.png">
+		<preferences>
+			<preference id="olip-isuseputty" name="extensions.olip.usePutty" type="bool" />
+			<preference id="olip-isusemappings" name="extensions.olip.getMappings" type="bool" />
+		</preferences>
+
+		<groupbox id="putty-settings">
+			<caption label="&pref.app.TabTitle;" />
+			<checkbox id="olipIsPutty"
+								label="&pref.app.PuttyAsExternalApp;"
+								preference="olip-isuseputty" />
+                        <label style="font-size:80%;" value="&pref.app.PuttyInfoTip;" />
+			<checkbox id="olipUsePuttyMappings"
+								label="&pref.app.PuttyUseMappings;"
+								disabled="true"
+								preference="olip-isusemappings" />
+		</groupbox>
+	</prefpane>
+	
+	<prefpane id="olip-display" label="&pref.view.TabTitle;" image="chrome://olip/skin/icons/browser-icon-32.png">
+		<preferences>
+			<preference id="olip-toolbar-view" name="extensions.olip.showOnToolBar" type="bool" />
+			<preference id="olip-addonbar-view" name="extensions.olip.showOnAddonBar" type="bool" />
+			<preference id="olip-context-menu-view" name="extensions.olip.showInRightClickMenu" type="bool" />
+			<preference id="olip-location-bar-view" name="extensions.olip.showInLocationBar" type="bool" />
+		</preferences>
+		<groupbox id="view-settings">
+			<caption label="&pref.view.TabTitle;" />
+			<checkbox id="olipShowInToolBar"
+								label="&pref.view.TabTitle;"
+								disabled="true"
+								preference="olip-toolbar-view" />
+                        <checkbox id="olipShowOnAddbar"
+								label="&pref.view.ShowOnAddOnBar;"
+								disabled="true"
+								preference="olip-addonbar-view" />
+			<checkbox id="olipShowInContextMenu"
+								label="&pref.view.ShowInContextMenu;"
+								disabled="true"
+								preference="olip-context-menu-view" />
+			<checkbox id="olipShowOnAddressBar"
+								label="&pref.view.ShowOnNavBar;"
+								disabled="true"
+								preference="olip-location-bar-view" />
+		</groupbox>
+	</prefpane>
+</prefwindow>
+

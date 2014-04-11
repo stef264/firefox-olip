@@ -1,0 +1,8 @@
+content	olip	chrome/content/
+
+skin	olip	classic/1.0 chrome/skin/
+locale	olip	en-US	chrome/locale/en-US/
+locale	olipSettings	en-US	chrome/locale/en-US/
+
+overlay	chrome://browser/content/browser.xul	chrome://olip/content/olipOverlay.xul
+

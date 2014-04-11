@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window SYSTEM "chrome://olip/locale/olip.dtd">
+
+<overlay id="memfx-browser-overlay"
+	  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	  
+	<script src="chrome://olip/content/olipCommon.js" />
+	<script src="chrome://olip/content/olipSettings.js" />
+	
+	<!--window id="main-window">
+		<popupset id="mainPopupSet"/>
+	</window-->
+	
+	<menupopup id="menu_ToolsPopup">
+		<menu id="olip-menu" label="&toolbar.OptionName;" class="menu-iconic"
+			image="chrome://olip/skin/icons/link-icon-24.png"
+			insertafter="javascriptConsole,devToolsSeparator">
+			<menupopup id="olip-popup-menu">
+				<menuitem id="olip-config" label="&toolbar.SettingsMenuItem;" image="chrome://olip/skin/icons/link-icon-16.png" oncommand="Olip.Common.ShowSettings();"/>
+				<menuitem id="olip-start" label="&toolbar.OpenLinkMenuItem;" image="chrome://olip/skin/icons/link-icon-16.png" oncommand="Olip.Common.StartExternalApp();"/>
+				<menuseparator/>
+				<menuitem id="memfx-options" label="&toolbar.AboutMeMenuItem;" image="chrome://olip/skin/icons/link-icon-16.png" oncommand="Olip.Common.GotoHomePage();"/>
+			</menupopup>
+		</menu>
+	</menupopup>
+	
+	<keyset id="mainKeyset">
+        <key id="olipOpenThisLink" modifiers="alt" key="&sckey.OpenLinkShortcut;" 
+            oncommand="return Olip.Common.StartExternalApp();" />
+        <key id="olipCopyLink" modifiers="alt" key="&sckey.CopyLinkToClipboard;" 
+            oncommand="return Olip.Common.CopyLinkToClipboard();" /> 
+        <key id="olipCopyFullLink" modifiers="alt" key="&sckey.CopyFullLinkToClipboard;" 
+            oncommand="return Olip.Common.CopyFullLinkToClipboard();" /> 
+    </keyset>
+	
+	<popup id="contentAreaContextMenu">
+        <menuitem id="olip-menu-item"
+                  insertafter="context-selectall"
+                  accesskey="o"
+                  image="chrome://olip/skin/icons/link-icon-24.png"
+                  label="&context.OpenLinkName;"
+                  oncommand="return Olip.Common.StartExternalApp();"/>
+    </popup>
+	
+	<toolbarpalette id="BrowserToolbarPalette">
+		 <toolbarbutton 
+			id="olip-toolbar-button" 
+            label="&toobar.ExtenationName;" 
+            image="chrome://olip/skin/icons/link-icon-24.png" 
+            oncommand="return Olip.Common.StartExternalApp();"
+		/>
+    </toolbarpalette>
+</overlay>

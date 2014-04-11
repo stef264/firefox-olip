@@ -1,0 +1,9 @@
+<!ENTITY toolbar.OptionName "Olip Menu">
+<!ENTITY toolbar.SettingsMenuItem "Settings...">
+<!ENTITY toolbar.OpenLinkMenuItem "Open Current Link...">
+<!ENTITY toolbar.AboutMeMenuItem "About">
+<!ENTITY sckey.OpenLinkShortcut "z">
+<!ENTITY sckey.CopyLinkToClipboard "c">
+<!ENTITY sckey.CopyFullLinkToClipboard "x">
+<!ENTITY context.OpenLinkName "Open via OLIP...">
+<!ENTITY toobar.ExtenationName "OLIP">
