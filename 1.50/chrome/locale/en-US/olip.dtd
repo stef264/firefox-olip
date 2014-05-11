@@ -1,0 +1,26 @@
+<!ENTITY toolbar.OptionName "Olip Menu">
+<!ENTITY toolbar.SettingsMenuItem "Settings...">
+<!ENTITY toolbar.OpenLinkMenuItem "Open Current Link...">
+<!ENTITY toolbar.AboutMeMenuItem "About">
+<!ENTITY sckey.OpenLinkShortcut "z">
+<!ENTITY sckey.CopyLinkToClipboard "c">
+<!ENTITY context.OpenLinkName "Open In OLIP...">
+<!ENTITY toobar.ExtenationName "OLIP">
+<!ENTITY olipExtensionName "OLIP">
+<!ENTITY olipExtensionFullName "Open Link In Program(OLIP)">
+<!ENTITY pref.OlipTitle "OLIP Settings">
+<!ENTITY pref.gen.TabTitle "General Settings">
+<!ENTITY pref.gen.EnablePlugin "Enable Plugin">
+<!ENTITY pref.gen.UseURLFilters "Use URL Filters">
+<!ENTITY pref.gen.ExternalApp "External Application : ">
+<!ENTITY pref.gen.ExternalAppLocation "External Application Location">
+<!ENTITY pref.gen.BrowseLabel "Browse">
+<!ENTITY pref.app.TabTitle "Putty Settings">
+<!ENTITY pref.app.PuttyAsExternalApp "Use Putty As External Program">
+<!ENTITY pref.app.PuttyInfoTip "Please select proper putty location on general settings tab">
+<!ENTITY pref.app.PuttyUseMappings "Use Putty Saved Session Mappings">
+<!ENTITY pref.view.TabTitle "Display Settings">
+<!ENTITY pref.view.TabTitle "Show OLIP In Toolbar">
+<!ENTITY pref.view.ShowOnAddOnBar "Show OLIP On Addon bar">
+<!ENTITY pref.view.ShowInContextMenu "Show OLIP in context menu">
+<!ENTITY pref.view.ShowOnNavBar "Show OLIP On Navigation bar">
