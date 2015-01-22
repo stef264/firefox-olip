@@ -27,7 +27,7 @@
 				preference="olip-copyfull" />
 			<hbox align="center">
 			    <label id="olipExtAppLabel" value="&pref.gen.ExternalApp;"/>
-				<textbox id="olipExtAppLocation" label="&pref.gen.ExternalAppLocation;" preference="olip-extapplocation" readonly="true" width="250" />
+				<textbox id="olipExtAppLocation" label="&pref.gen.ExternalAppLocation;" preference="olip-extapplocation" width="250" />
 				<button id="browsebtn" label="&pref.gen.BrowseLabel;" oncommand="OlipOne.BrowseAppPath();"/>
 			</hbox>
 			<hbox align="center">
